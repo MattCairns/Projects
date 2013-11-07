@@ -28,8 +28,4 @@ def check_card(ccn):
 
 
 
-
-
-
-
-print check_card('4556737586899855') #This number isn't real but is valid.
+print check_card('4556737586899855') #This number isn't real but is valid

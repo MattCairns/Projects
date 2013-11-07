@@ -1,4 +1,12 @@
 def pig_latin(s):
+	"""
+	Translates the words contained in a string into pig latin.
+
+	Paramenters:
+		s: Any string.
+	Returns:
+		A string stranslated into pig latin.
+	"""
 	s = s.lower()
 	s = s.split()
 	pig_s = []

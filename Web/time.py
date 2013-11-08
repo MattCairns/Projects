@@ -1,13 +1,12 @@
-"""
-Get Atomic Time from Internet Clock - This program will get
-the true atomic time from an atomic time clock on the Internet.
-Use any one of the atomic clocks returned by a simple Google search.
-"""
-
-import re
-from urllib2 import urlopen
+import requests
 
 
-def main():
+def atomic_time():
+    """Returns the true atomic time from time.is"""
     url = 'http://time.is/just'
+    r = requests.get(url)
+
+    print r.text
+
+atomic_time()
 

@@ -1,4 +1,5 @@
 import requests
+import time
 
 
 def atomic_time():
@@ -6,7 +7,13 @@ def atomic_time():
     url = 'http://time.is/just'
     r = requests.get(url)
 
-    print r.text
+    time_html = r.text
 
-atomic_time()
+    print time_html[10753+14:10753+22]
+
+    time.sleep(30)
+
+
+while True:
+    atomic_time()
 
